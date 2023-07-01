@@ -18,3 +18,14 @@ def advinha():
     resto7 = int(input("Resto por 7"))
     idade = (resto3 * 70 + resto5 * 21 + resto7 * 15) % 105
     print(f"Sua idade é {idade}, você nasceu {datetime.now().year - idade}")
+def contador():
+    print('Digite um número para que eu o apresente de forma descrecente e crescente')
+    numero = int(input('Número:'))
+    print('ORDEM CRESCENTE')
+    for x in range(0, numero + 1):
+        print(x)
+
+    print('ORDEM DESCRESCENTE')
+    for x in range(numero, 0, -1):
+        print(x)
+contador()
