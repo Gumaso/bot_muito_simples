@@ -2,6 +2,10 @@ from datetime import datetime
 
 
 def apresentacao():
+    """
+    Solicita ao usuário o nome do robô e a idade do robô. Imprime uma mensagem de apresentação, utilizando o nome fornecido,
+    e calcula e imprime o ano em que o robô foi criado, com base na idade fornecida.
+    """
     nome = input("Qual o nome do robo?")
     idade = int(input("Qual a minha idade?"))
     print(f"Olá! Me chamo {nome}")
@@ -9,11 +13,18 @@ def apresentacao():
 
 
 def conhecendo_user():
+    """
+    Solicita ao usuário o seu nome e imprime uma mensagem de prazer em conhecê-lo, utilizando o nome fornecido.
+    """
     usuario = input("Qual o seu nome usuário?")
     print(f"Prazer em conhecê-lo {usuario}!")
 
 
 def advinha():
+    """
+    Tenta advinhar a idade do usuário com base no resto da divisão da idade por 3, 5 e 7 fornecidos pelo usuário.
+    Calcula uma estimativa da idade e imprime a idade calculada e o ano aproximado de nascimento.
+    """
     print("Vou advinhar sua idade!")
     print("Digite o resto da divisão da sua idade por 3, 5 e 7.")
     print("Ou seja, o que sobra quando você divide sua idade por 3, 5 e 7")
@@ -25,6 +36,10 @@ def advinha():
 
 
 def contador():
+    """
+    Solicita ao usuário um número e imprime uma sequência de números em ordem crescente e outra em ordem decrescente,
+    até o número fornecido pelo usuário.
+    """
     print('Digite um número para que eu o apresente de forma descrecente e crescente')
     numero = int(input('Número:'))
     print('ORDEM CRESCENTE')
@@ -37,6 +52,10 @@ def contador():
 
 
 def quiz():
+    """
+    Apresenta uma pergunta ao usuário e fornece opções de resposta. Avalia a resposta fornecida pelo usuário e imprime
+    uma mensagem informando se a resposta está correta ou incorreta.
+    """
     print('Pergunta: Qual é o planeta do nosso sistema solar conhecido como "Planeta Vermelho"?')
     print(
         """
