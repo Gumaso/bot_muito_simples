@@ -52,3 +52,10 @@ def quiz():
     else:
         print('Resposta incorreta!\nA resposta correta é a opção 1. Marte, já que é o planeta do nosso sistema solar '
               'conhecido como o "Planeta Vermelho".')
+
+
+print("Chat Bot")
+apresentacao()
+conhecendo_user()
+advinha()
+contador()
