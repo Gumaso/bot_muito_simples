@@ -8,3 +8,13 @@ def apresentacao():
 def conhecendo_user():
     usuario = input("Qual o seu nome usuário?")
     print(f"Prazer em conhecê-lo {usuario}!")
+
+def advinha():
+    print("Vou advinhar sua idade!")
+    print("Digite o resto da divisão da sua idade por 3, 5 e 7.")
+    print("Ou seja, o que sobra quando você divide sua idade por 3, 5 e 7")
+    resto3 = int(input("Resto por 3"))
+    resto5 = int(input("Resto por 5"))
+    resto7 = int(input("Resto por 7"))
+    idade = (resto3 * 70 + resto5 * 21 + resto7 * 15) % 105
+    print(f"Sua idade é {idade}, você nasceu {datetime.now().year - idade}")
